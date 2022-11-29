@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,11 +95,11 @@
             </div>
         </section>
 
-        <footer class="footer">
+<footer class="footer">
   <?php 
       include("footer.php");
     ?>
-  </footer>
+</footer>
 
 </body>
 </html>
