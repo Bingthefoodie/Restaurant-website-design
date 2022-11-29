@@ -20,7 +20,7 @@
             <div class="aboutusbox-group">
                 
             <div class="aboutboxItem">
-            <img class="aboutImage" src="../Web-Assignment02/Pictures/shamianfen.jpg" alt="communication aboutlist image">
+            <img class="aboutImage" src="../Web-Assignment02/Pictures/firstImage.jpg" alt="communication aboutlist image">
             </div>
 
             <div class="aboutboxItem">
@@ -48,7 +48,7 @@
                  <p>Tasty and comforting</p>
             </div>
             <div class="aboutboxItem">
-                <img class="aboutImage" src="/Web-Assignment02/Pictures/jianjiao2.jpg" alt="fried dumplings2">
+                <img class="aboutImage" src="../Web-Assignment02/Pictures/steambuns.jpg" alt="steam buns">
             </div>
 
             <div class="aboutlist">
@@ -81,65 +81,43 @@
         </div>
         </div>
         
-        <section class="aboutgridbox">
-            
+        <section class="aboutgridbox"> 
             <div class="aboutlist">
                 
-                <img class="gridimage" src="../Web-Assignment02/Pictures/jianjiao.jpg" alt="linux image">
-                <p></p>
-            </div>
-            <div class="aboutlist">
-                <p> Dumplings!Dumplings!Dumplings! Nothing could be more versitile than dumplings. 
-                  It's eaten on every single holidays and cooked in many forms. You could have vegetarian, meat lover,
-                  cheese lover, steamed, fried, boiled, endless possibilities. All our dumplings are made by hand
-                   locally with the most fresh ingredients.
-                  <<================
-                </p>
-            </div>   
-            <div class="aboutlist">
-                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/mochi.jpg" alt="java image">
-                <p></p>
+                <img class="gridimage" src="../Web-Assignment02/Pictures/mochi.jpg" alt="mochi">
             </div>
             <div class="aboutlist">
                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/spice.jpg" alt="web image">
-                <p></p>
+                <img class="gridimage" src="../Web-Assignment02/Pictures/spice.jpg" alt="spice">
             </div>
             <div class="aboutlist">
                 
-                <img class="gridimage" src="../Web-Assignment02/Pictures/zongzi.jpg" alt="math image">
-                <p></p>
+                <img class="gridimage" src="../Web-Assignment02/Pictures/zongzi.jpg" alt="zongzi">
             </div>
             <div class="aboutlist">
                
                 <img class="gridimage" src="../Web-Assignment02/Pictures/doufubowl.jpg"
-                    alt="computer essential image">
-                <p></p>
+                    alt="doufubowl">
             </div>
             <div class="aboutlist">
         
                 <img class="gridimage" src="../Web-Assignment02/Pictures/friedrice.jpg"
-                    alt="computer programming image">
-                <p></p>
+                    alt="friedrice">
             </div>
             <div class="aboutlist">
                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/jianjiao2.jpg" alt="database aboutlist image">
-                <p></p>
+                <img class="gridimage" src="../Web-Assignment02/Pictures/porkbelly.jpg" alt="porkbelly">
             </div>
             <div class="aboutlist">
                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/shamianfen.jpg"
-                    alt="communication aboutlist image">
-                <p></p>
+                <img class="gridimage" src="../Web-Assignment02/Pictures/dumplings.jpg"
+                    alt="dumplings">
             </div>
 
             <div class="aboutlist">
                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/baojiaozi.jpg"
-                    alt="communication aboutlist image">
-                <p></p>
+                <img class="gridimage" src="../Web-Assignment02/Pictures/cutmeat.jpg"
+                    alt="cutmeat">
             </div>
         </section>
 </main>

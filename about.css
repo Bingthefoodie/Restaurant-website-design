@@ -24,12 +24,13 @@
   .aboutboxItem{
     width: auto;
     text-align:left;
-    font-size: 2.1vw;
+    font-size: 1.8vw;
     padding: 30pt;
   }
 
   .aboutImage{
     width: 110%;
+    height: auto;
     size: 100%;
   }
 
