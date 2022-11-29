@@ -10,9 +10,6 @@
             </ul>
           </div>
           <div class="footer-main-iterm">
-            <a href="#">Back to the Top</a>
-          </div>
-          <div class="footer-main-iterm">
             <h2 class="footer-header">Hours</h2>
             <ul>
               <li>Mon-Wed 6-11</li>
@@ -22,7 +19,7 @@
             </ul>
           </div>
         </section>
-        <p>Formatted and coded by Bing Xie, Yalin Su, Jiale Zhang</p>
+        <p>Formatted and coded by Bing Xie, Yalin Su, Jiale Zhang and Huaqing Zheng</p>
       </footer>
     
 </body>
