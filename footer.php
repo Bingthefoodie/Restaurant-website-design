@@ -22,7 +22,7 @@
             </ul>
           </div>
         </section>
-        <p>Formatted and coded by Bing Xie, Yalin Su, Jiale Zhang</p>
+        <p>Formatted and coded by Bing Xie, Yalin Su, Jiale Zhang and Huaqing Zheng</p>
       </footer>
     
 </body>

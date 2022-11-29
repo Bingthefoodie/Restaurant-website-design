@@ -24,7 +24,7 @@
   }
   .header-logo{
     padding-top: 20pt;
-    padding-left: 30pt;
+    padding-left: 50pt;
   }
   .header-logo a{
     color: azure;
@@ -35,14 +35,16 @@
     position: absolute;
     width:auto;
     margin: 20px;
-    padding-left: 700pt;
+    padding-left: 650pt;
     background-color: transparent;
+  
   }
 
   .header-navbar{
     overflow: hidden;
     position: relative;
     display: flex;
+    box-sizing: border-box;
   }
 
   .header-navbar a{
@@ -122,17 +124,18 @@
   }
   a:hover {
     text-decoration: underline;
+    color: rgb(229, 152, 10);
+   
   }
   a{
     text-decoration: none;
+    color: rgb(229, 152, 10);
   }
 
 
   /*about page CSS*/
   /*build grid boxes,sets a size for the columns in a grid container*/
-  .container{
-    display: flex;
-  }
+
   .aboutusbox{
     text-align: center;
     padding: 20px;
