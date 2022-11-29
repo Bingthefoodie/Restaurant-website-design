@@ -1,0 +1,73 @@
+  /*about page CSS*/
+  /*build grid boxes,sets a size for the columns in a grid container*/
+
+  .aboutus{
+    margin: 0;
+    padding-top: 50pt;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    color: azure;
+  }
+  .aboutusbox{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+    color: azure;
+  }
+  .aboutusbox-group{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+    padding: 1em 0;
+  }
+  .aboutboxItem{
+    width: auto;
+    text-align:left;
+    font-size: 2.1vw;
+    padding: 30pt;
+  }
+
+  .aboutImage{
+    width: 110%;
+    size: 100%;
+  }
+
+.aboutgridbox{
+  display: grid;
+  grid-template: auto / auto auto;
+  grid-template-columns:repeat(2 1fr);
+  grid-template-rows: repeat(2,1fr);
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+/*control  image inside each grid box*/
+.gridimage{
+  width: 500px;
+  height: 600px;
+  padding: 2px;
+  align-items: center;
+}
+
+/*control the box for each grid item,specifies the initial length of a flexible item*/
+.aboutlist{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 300px;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #030303;
+ 
+}
+/*control text inside each grid box*/
+.aboutlist p{
+  text-align: center;
+ padding-top: 200px;
+ padding-left: 20px;
+ padding-right: 20px;
+  color: azure;
+  align-content: center;
+}
+
