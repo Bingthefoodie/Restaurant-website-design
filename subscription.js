@@ -5,6 +5,21 @@ let nameInput = document.querySelector("#login");
 let passwordInput = document.querySelector("#pass");
 let retypePasswordInput = document.querySelector("#pass2");
 let newsInput = document.querySelector("#newsletter");
+let firstNameInput=document.querySelector("#firstName");
+let lastNameInput=document.querySelector("#lastName");
+let phoneNumberInput=document.querySelector("#phoneNumber");
+
+let firstNameError = document.createElement("p");
+firstNameError.setAttribute("class","warning");
+//append the created element to the parent of textEmail div
+document.querySelectorAll(".userFirstName")[0].append(firstNameError);
+firstNameError.style.color = "red";
+
+ let lastNameError = document.createElement("p");
+lastNameError.setAttribute("class","warning");
+ //append the created element to the parent of textEmail div
+document.querySelectorAll(".userLastName")[0].append(lastNameError);
+lastNameError.style.color= "red";
 
 // create paragraph to display the error Msg returented by vaildateEmail() function 
 // and assign this paragraph to the class warning to style the error MSg
@@ -13,6 +28,14 @@ emailError.setAttribute("class","warning");
 //append the created element to the parent of textEmail div
 document.querySelectorAll(".textEmail")[0].append(emailError);
 emailError.style.color = "red";
+
+// create paragraph to display the error Msg returented by validatePhoneNumber() function 
+// and assign this paragraph to the class warning to style the error MSg
+let phoneNumberError = document.createElement("p");
+ phoneNumberError.setAttribute("class","warning");
+//append the created element to the parent of textEmail div
+document.querySelectorAll(".phoneNumber")[0].append(phoneNumberError);
+phoneNumberError.style.color = "red";
 
 // create paragraph to display the error Msg returented by validateTerm() function 
 // and assign this paragraph to the class warning to style the error MSg
@@ -46,6 +69,7 @@ retypePasswordError.setAttribute("class","warning");
 document.querySelectorAll(".textRetypePassword")[0].append(retypePasswordError);
 retypePasswordError.style.color = "red";
 
+
 //define global variables for displaying the error message
 let emailErrorMsg = "Email address should be non-empty with the format xyx@xyz.xyz.";
 let termErrorMsg = "Please accept the terms and conditions.";
@@ -55,7 +79,36 @@ let passwordErrorMsgLength = "password should be at least 6 characters long.";
 let passwordErrorMsgCase = "password should have at least 1 uppercase letter and 1 lowercase letter.";
 let passwordErrorMsgCheck = "Both password should be matched.";
 let passwordErrorMsgBlank = "This field cannot be blank.";
+let lastNameErrorMsg= "Please enter name with letters only";
+let firstNameErrorMsg= "Please enter name with letters only";
+let phoneNumberErrorMsg="Please enter the phone number in (123) 456-7890 or 123-456-7890 format";
 let defaultMSg = "";
+
+//method to validate first name
+function validateFirstName(){
+    let firstName=firstNameInput.value;
+    let regexp=/^[a-zA-Z]+$/;
+    if(regexp.test(firstName)){
+        error=defaultMSg;
+    }
+    else{
+        error=firstNameErrorMsg;
+    }
+    return error;
+}
+
+//method to validate last name
+function validateLastName(){
+    let lastName=lastNameInput.value;
+    let regexp=/^[a-zA-Z]+$/;
+    if(regexp.test(lastName)){
+        error=defaultMSg;
+    }
+    else{
+        error=lastNameErrorMsg;
+    }
+    return error;
+}
 
 //method to validate email
 function validateEmail()
@@ -74,6 +127,21 @@ function validateEmail()
     return error;
 }
 
+//method to validate phone number
+function validatePhoneNumber()
+{
+    let phoneNumber=phoneNumberInput.value;
+    let regexp=/^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/;
+    if(regexp.test(phoneNumber))
+    {
+        error=defaultMSg;
+    }
+    else
+    {
+        error=phoneNumberErrorMsg;
+    }
+    return error;
+}
 //method to validate name
 function validateName()
 {  
@@ -170,13 +238,29 @@ function validate()
     let nameValidation = validateName();
     let passwordValidation = validatePassword();
     let retypePasswordValidation = validateRetypePassword();
+    let firstNameValidation=validateFirstName();
+    let lastNameValidation=validateLastName();
+    let phoneNumberValidation=validatePhoneNumber();
     let name = nameInput.value;
 
+    if(firstNameValidation!==defaultMSg){
+        firstNameError.textContent=firstNameValidation;
+        valid=false;
+    }
+    if(lastNameValidation!==defaultMSg){
+        lastNameError.textContent=lastNameValidation;
+        valid=false;
+    }
     if(emailValidation !== defaultMSg)
     {
         emailError.textContent = emailValidation;
         valid = false;
     }
+    if(phoneNumberValidation!==defaultMSg){
+        phoneNumberError.textContent=phoneNumberValidation;
+        valid=false;
+    }
+    
     if(nameValidation !== defaultMSg)
     {
         nameError.textContent = nameValidation;
@@ -210,10 +294,25 @@ function resetFormError()
     passwordError.textContent = defaultMSg;
     retypePasswordError.textContent = defaultMSg;
     termError.textContent = defaultMSg;
+    firstNameError.textContent=defaultMSg;
+    lastNameError.textContent=defaultMSg;
+    phoneNumberError.textContent=defaultMSg;
 }
 //event listner for the reset button inside the form
 document.form.addEventListener("reset",resetFormError);
 
+firstNameInput.addEventListener("blur",()=>{
+    let firstName=validateFirstName();
+    if(firstName=defaultMSg){
+        firstNameError.textContent=defaultMSg;
+    }
+});
+lastNameInput.addEventListener("blur",()=>{
+    let lastName=validateLastName();
+    if(lastName=defaultMSg){
+        lastNameError.textContent=defaultMSg;
+    }
+});
 //event listner for the email if user input the correct format of email,
 //the error message will be clear
 emailInput.addEventListener("blur",()=>{
@@ -221,6 +320,13 @@ emailInput.addEventListener("blur",()=>{
     if(email == defaultMSg)
     {
         emailError.textContent = defaultMSg;
+    }
+});
+
+phoneNumberInput.addEventListener("blur",()=>{
+    let phoneNumber=validatePhoneNumber();
+    if(phoneNumber=defaultMSg){
+        phoneNumberError.textContent=defaultMSg;
     }
 });
 
@@ -233,6 +339,7 @@ nameInput.addEventListener("blur",()=>{
         nameError.textContent = defaultMSg;
     }
 });
+
 
 //event listner for the password if user input the correct format of password,
 //the error message will be clear

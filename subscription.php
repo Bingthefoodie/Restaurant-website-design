@@ -59,8 +59,8 @@
             </div>
 
             <div class="centerButton">
-            <button type="submit" id="sign-up">Sign-Up</button>
-            <button type="reset">Reset</button>
+            <button id="sign-up" type="submit" class="button button1">Sign-Up</button>
+            <button  type="reset"class="button button2">Reset</button>
             </div>
 
         </form>

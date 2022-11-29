@@ -30,22 +30,22 @@ input[type=password], select{
 }
 
 /*change the style for all the button with submit type*/
-button[type=submit]{
-    width: 8%;
+ button[type=submit]{
     font-size:medium;
     background-color: rgb(40, 119, 215);
     color: white;
-    padding: 10px 70px;
+    padding: 10px 50px; 
     margin: 10px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     text-align:left;
+    line-height: 80px;
+    box-sizing: border-box; 
 }
 
 /*change the style for all the button with reset type*/
-button[type=reset]{
-    width: 8%;
+  button[type=reset]{
     font-size:medium;
     background-color: red;
     color: white;
@@ -54,9 +54,9 @@ button[type=reset]{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
+} 
 
 .centerButton{
     padding-left: 500px;
     
-}
+} 
