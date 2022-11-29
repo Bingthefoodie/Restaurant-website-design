@@ -82,6 +82,7 @@
         </div>
         
         <section class="aboutgridbox"> 
+            <div class="aboutlist-group">
             <div class="aboutlist">
                 
                 <img class="gridimage" src="../Web-Assignment02/Pictures/mochi.jpg" alt="mochi">
@@ -96,8 +97,9 @@
             </div>
             <div class="aboutlist">
                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/doufubowl.jpg"
-                    alt="doufubowl">
+            <img class="gridimage" src="../Web-Assignment02/Pictures/cutmeat.jpg"
+                    alt="cutmeat">
+                
             </div>
             <div class="aboutlist">
         
@@ -116,9 +118,10 @@
 
             <div class="aboutlist">
                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/cutmeat.jpg"
-                    alt="cutmeat">
+            <img class="gridimage" src="../Web-Assignment02/Pictures/doufubowl.jpg"
+                    alt="doufubowl">
             </div>
+        </div>
         </section>
 </main>
 <footer class="footer">

@@ -35,40 +35,54 @@
   }
 
 .aboutgridbox{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.aboutlist-group{
   display: grid;
-  grid-template: auto / auto auto;
-  grid-template-columns:repeat(2 1fr);
-  grid-template-rows: repeat(2,1fr);
-  margin-left: 200px;
-  margin-right: 200px;
-
-}
-/*control  image inside each grid box*/
-.gridimage{
-  width: 500px;
-  height: 600px;
-  padding: 2px;
-  align-items: center;
+  grid-template-columns: auto auto;
+  gap: 1em;
+  padding: 1em 0;
 }
 
-/*control the box for each grid item,specifies the initial length of a flexible item*/
 .aboutlist{
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 300px;
-  border-radius: 30px;
-  margin: 5px;
-  padding: 5px;
-  border: 2px solid #030303;
- 
-}
-/*control text inside each grid box*/
-.aboutlist p{
-  text-align: center;
- padding-top: 200px;
- padding-left: 20px;
- padding-right: 20px;
-  color: azure;
-  align-content: center;
+  width: auto;
 }
 
+.gridimage{
+  size: 100%;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutusbox-group{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "aboutboxItem"
+      ;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .aboutlist-group{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "aboutlist"
+      ;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .aboutlist-group{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "aboutlist"
+      ;
+  }
+  
+}
