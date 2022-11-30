@@ -1,8 +1,13 @@
+/*css file for header.php, footer.php and subpageHeader.php*/
+
+
+/*reset margin and padding*/
 * {
   margin: 0;
   padding:0;
 }
 
+/*set the font style and background color for the page*/
   body, html{
     font-family: 'Cardo', serif;
     height: 100%;
@@ -10,9 +15,12 @@
     background-color: black;
   }
 
+/*set the backgroud color for the footer*/
   footer{
     background-color: black;
   }
+
+  /*insert a image as background for the index page*/
   .homebg{
     background-image: url("/Web-Assignment02/Pictures/homeimage.jpg");
     height: 800px;
@@ -22,24 +30,30 @@
     background-size: cover;
     position: relative;
   }
+
+  /*set the padding for the h1-header "Taste of home"*/
   .header-logo{
     padding-top: 20pt;
     padding-left: 50pt;
   }
+
+  /*set the style for header "Taste of home"*/
   .header-logo a{
     color: azure;
     text-decoration: none;
     font-size: 3rem;
   }
+
+  /*this is a container that wrap all the narbar content*/
   .container {
     position: absolute;
     width:auto;
     margin: 20px;
     padding-left: 650pt;
     background-color: transparent;
-  
   }
 
+  /*set the position of navbar*/
   .header-navbar{
     overflow: hidden;
     position: relative;
@@ -47,8 +61,8 @@
     box-sizing: border-box;
   }
 
+  /*style all the text contents of narbar*/
   .header-navbar a{
-    float: left;
     color: azure;
     text-align: center;
     padding: 14px 16px;
@@ -56,12 +70,8 @@
     font-size:large;
     margin: auto;
   }
-  @media only screen and (min-device-width: 400px){
-    .homebg{
-      background-image: url("/Web-Assignment02/Pictures/homeimage.jpg");
-    }
-  }
 
+  /*set flex box for wrapping all the content under footer-main*/
   .footer-main{
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +79,7 @@
     justify-content: center;
   }
 
+  /*set style for contact and hours content under footer-main-iterm*/
   .footer-main-iterm{
     padding: 1rem;
     min-width: 12rem;
@@ -76,24 +87,34 @@
     color: azure;
   }
 
+  /*remove the unorder list symbol and centre*/
   .footer-main-iterm ul{
     list-style: none;
     text-align: center;
   }
+
+  /*set the line-height for footer section*/
   footer{
     line-height: 1.5;
   }
 
+  /*set the style for the paragraph under footer section*/
   footer p{
     text-align: center;
     color: grey;
   }
+
+  /*this is the container to wrap all the content for menu page
+    and set the margin, padding and text color for all the content
+    that are wrapped under this class*/
   .menu-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1.5em;
     color: azure;
   }
+
+  /*set the style for all the menu headers*/
   .menu-header{
     margin: 0;
     padding-top: 50pt;
@@ -101,32 +122,46 @@
     border-bottom: 2px solid #ccc;
     text-align: center;
   }
+
+  /*set flex box to wrap all the menu items*/
   .menu-iterm-header{
     display: flex;
     justify-content: space-between;
   }
+
+  /*this is the grib box for showing all the menu items in one column*/
   .menu-iterm-group{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
     padding: 1em 0;
   }
+
+  /*style all the food tags*/
   .foodTag{
     color: greenyellow;
     padding-left: 10px;
   }
+
+  /*flex box for showing menu images in one row*/
   .menu-image{
     display: flex;
     flex-direction: row;
   }
+
+  /*set the width for menu images*/
   .menu-dishImage{
     width: 50%;
   }
+
+  /*set when mouse move over the anchor tag, changed color and show underline*/
   a:hover {
     text-decoration: underline;
     color: rgb(229, 152, 10);
    
   }
+
+  /*set the anchor tag color and remove text-decoration on the footer*/
   a{
     text-decoration: none;
     color: rgb(229, 152, 10);

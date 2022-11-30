@@ -1,6 +1,7 @@
   /*about page CSS*/
   /*build grid boxes,sets a size for the columns in a grid container*/
 
+  /*style the "about us" header*/
   .aboutus{
     margin: 0;
     padding-top: 50pt;
@@ -9,18 +10,24 @@
     text-align: center;
     color: azure;
   }
+  /*
+    This is the box for wrapping all the contents that need to be gribed for the first half of the page
+    setting margin, padding and text color for the content that under class "aboutusbox"
+  */
   .aboutusbox{
     max-width: 1200px;
     margin: 0 auto;
     padding: 1.5em;
     color: azure;
   }
+  /*grid box for wapping all the classes under "aboutboxItem"*/
   .aboutusbox-group{
     display: grid;
     grid-template-columns: auto auto;
     gap: 1em;
     padding: 1em 0;
   }
+  /*setting style for the content that wrap inside of class "aboutboxItem"*/
   .aboutboxItem{
     width: auto;
     text-align:left;
@@ -28,35 +35,38 @@
     padding: 30pt;
   }
 
+  /*setting the width, height and size for all the images under class "aboutImage"*/
   .aboutImage{
     width: 110%;
     height: auto;
     size: 100%;
   }
 
-.aboutgridbox{
+  /*
+    This is the box for wrapping all the images for second part of the page
+    setting margin, padding and text color for the content that under class "aboutImagebox"
+    */
+.aboutImagebox{
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5em;
 }
 
+/*grid box for wapping all the classes under "aboutlist-group"*/
 .aboutlist-group{
   display: grid;
   grid-template-columns: auto auto;
   gap: 1em;
   padding: 1em 0;
 }
-
-.aboutlist{
-  width: auto;
-}
-
+/*set the size, width and height for all the images under class "gridimage"*/
 .gridimage{
   size: 100%;
   width: 100%;
   height: auto;
 }
-
+/*set when the brower's width is 800px wide or less, show the content on
+  aboutboxItem in one column*/
 @media screen and (max-width: 800px) {
   .aboutusbox-group{
       grid-template-columns: 1fr;
@@ -66,17 +76,8 @@
   }
   
 }
-
-@media screen and (max-width: 800px) {
-  .aboutlist-group{
-      grid-template-columns: 1fr;
-      grid-template-areas:
-      "aboutlist"
-      ;
-  }
-  
-}
-
+/*set when the brower's width is 800px wide or less, show the content on
+  aboutlist-group in one column*/
 @media screen and (max-width: 800px) {
   .aboutlist-group{
       grid-template-columns: 1fr;

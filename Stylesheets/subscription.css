@@ -1,6 +1,12 @@
+/*css file for subscription.php*/
+
+
+/*set the text color for body*/
 body{
     color: azure;
 }
+
+/**/
 .formcontainer{
     padding: 30pt;
     width: 70%;

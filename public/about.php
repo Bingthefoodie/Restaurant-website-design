@@ -81,7 +81,7 @@
         </div>
         </div>
         
-        <section class="aboutgridbox"> 
+        <section class="aboutImagebox"> 
             <div class="aboutlist-group">
             <div class="aboutlist">
                 
