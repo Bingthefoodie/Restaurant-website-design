@@ -2,11 +2,13 @@
 
 <body>
   <?php 
-    include("header.php");
+    include("../public/header.php");
+
   ?>
       
     <?php 
-      include("footer.php");
+      include("../public/footer.php");
+
     ?>
 </body>
 </html>

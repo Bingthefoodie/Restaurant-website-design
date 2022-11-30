@@ -1,12 +1,12 @@
 <head>
     <title>Subscription</title>
-    <link rel="stylesheet" href="subscription.css">
-    <script src="subscription.js" defer></script>
+    <link rel="stylesheet" href="/Web-Assignment02/Stylesheets/subscription.css">
+    <script src="/Web-Assignment02/private/subscription.js" defer></script>
 </head>
 
 <body>
 <?php 
- include("subpageHeader.php");
+ include("../public/subpageHeader.php");
 ?>
     <div class="formcontainer">
         <h1>Sign up</h1>
@@ -67,7 +67,7 @@
     </div>
 
 <?php 
-      include("footer.php");
+      include("../public/footer.php");
 ?>
 </body>
 </html>

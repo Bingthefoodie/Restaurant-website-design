@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding:0;
+}
+
+  body, html{
+    font-family: 'Cardo', serif;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+  }
+
+  footer{
+    background-color: black;
+  }
+  .homebg{
+    background-image: url("/Web-Assignment02/Pictures/homeimage.jpg");
+    height: 800px;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .header-logo{
+    padding-top: 20pt;
+    padding-left: 50pt;
+  }
+  .header-logo a{
+    color: azure;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  .container {
+    position: absolute;
+    width:auto;
+    margin: 20px;
+    padding-left: 650pt;
+    background-color: transparent;
+  
+  }
+
+  .header-navbar{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .header-navbar a{
+    float: left;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:large;
+    margin: auto;
+  }
+  @media only screen and (min-device-width: 400px){
+    .homebg{
+      background-image: url("/Web-Assignment02/Pictures/homeimage.jpg");
+    }
+  }
+
+  .footer-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+  }
+
+  .footer-main-iterm{
+    padding: 1rem;
+    min-width: 12rem;
+    text-align: center;
+    color: azure;
+  }
+
+  .footer-main-iterm ul{
+    list-style: none;
+    text-align: center;
+  }
+  footer{
+    line-height: 1.5;
+  }
+
+  footer p{
+    text-align: center;
+    color: grey;
+  }
+  .menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+    color: azure;
+  }
+  .menu-header{
+    margin: 0;
+    padding-top: 50pt;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+  }
+  .menu-iterm-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-iterm-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 1em 0;
+  }
+  .foodTag{
+    color: greenyellow;
+    padding-left: 10px;
+  }
+  .menu-image{
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-dishImage{
+    width: 50%;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: rgb(229, 152, 10);
+   
+  }
+  a{
+    text-decoration: none;
+    color: rgb(229, 152, 10);
+  }
+
+
+
+
+
+
+
+
+
+
+
+

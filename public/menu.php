@@ -10,7 +10,7 @@
 
 <body>
 <?php 
-    include("subpageHeader.php");
+    include("../public/subpageHeader.php");
   ?>
   <main>
     <div class="menu-container">
@@ -56,8 +56,8 @@
             <p class="dish-text">Thickened broth filled with mushrooms, tofu and silky egg ribbons.</p>
           </div>
           <div class="menu-image">
-            <img class="menu-dishImage" src="Pictures/menupotstickers.jpg" alt="potstickers">
-            <img class="menu-dishImage" src="Pictures/menuspringrolls.jpg" alt="springrolls">
+            <img class="menu-dishImage" src="/Web-Assignment02/Pictures/menupotstickers.jpg" alt="potstickers">
+            <img class="menu-dishImage" src="/Web-Assignment02/Pictures/menuspringrolls.jpg" alt="springrolls">
           </div>
         </div>
         <h2 class="menu-header">- Main Dishes -</h2>
@@ -100,8 +100,8 @@
             <p class="dish-text">- Cantonese-style chicken cooked with soy sauce.</p>
           </div>
           <div class="menu-image">
-            <img class="menu-dishImage" src="Pictures/menufriednoodles.jpg" alt="Cantonese Pan-fried noodles">
-            <img class="menu-dishImage" src="Pictures/menuchicken.jpg" alt="Soy sauce chicken">
+            <img class="menu-dishImage" src="/Web-Assignment02/Pictures/menufriednoodles.jpg" alt="Cantonese Pan-fried noodles">
+            <img class="menu-dishImage" src="/Web-Assignment02/Pictures/menuchicken.jpg" alt="Soy sauce chicken">
           </div>
           <h2 class="menu-header">- Desserts -</h2>
           <div class="menu-iterm">
@@ -121,14 +121,14 @@
               class="foodTag">(GF)</strong></span>
           </div>
           <div class="menu-image">
-            <img class="menu-dishImage" src="Pictures/menumochi.jpg" alt="Mochi">
-            <img class="menu-dishImage" src="Pictures/menueggtart.jpg" alt="egg tarts">
+            <img class="menu-dishImage" src="/Web-Assignment02/Pictures/menumochi.jpg" alt="Mochi">
+            <img class="menu-dishImage" src="/Web-Assignment02/Pictures/menueggtart.jpg" alt="egg tarts">
           </div>
     </div>
   </main>
   <footer>
   <?php 
-      include("footer.php");
+      include("../public/footer.php");
     ?>
   </footer>
 

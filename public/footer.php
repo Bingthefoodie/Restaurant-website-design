@@ -15,7 +15,7 @@
               <li>Mon-Wed 6-11</li>
               <li>Thu-Sat 4-12</li>
               <li>Sun 3-10</li>
-              <li><a href="subscription.php">Sign up</a></li>
+              <li><a href="../public/subscription.php">Sign up</a></li>
             </ul>
           </div>
         </section>

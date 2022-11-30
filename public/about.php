@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="/Web-Assignment02/Stylesheets/about.css">
 </head>
 
 <body>
 <?php 
-    include("subpageHeader.php");
+    include("../public/subpageHeader.php");
   ?>
   <main>
         
@@ -20,7 +20,7 @@
             <div class="aboutusbox-group">
                 
             <div class="aboutboxItem">
-            <img class="aboutImage" src="../Web-Assignment02/Pictures/firstImage.jpg" alt="communication aboutlist image">
+            <img class="aboutImage" src="../Pictures/firstImage.jpg" alt="communication aboutlist image">
             </div>
 
             <div class="aboutboxItem">
@@ -48,12 +48,12 @@
                  <p>Tasty and comforting</p>
             </div>
             <div class="aboutboxItem">
-                <img class="aboutImage" src="../Web-Assignment02/Pictures/steambuns.jpg" alt="steam buns">
+                <img class="aboutImage" src="../Pictures/steambuns.jpg" alt="steam buns">
             </div>
 
             <div class="aboutlist">
                 
-                <img class="gridimage" src="../Web-Assignment02/Pictures/jianjiao.jpg" alt="fried dumplings">
+                <img class="gridimage" src="../Pictures/jianjiao.jpg" alt="fried dumplings">
             </div>
 
             <div class="aboutboxItem">
@@ -75,7 +75,7 @@
             </div> 
 
             <div class="aboutboxItem">
-                <img class="aboutImage" src="../Web-Assignment02/Pictures/dandanmian.jpg" alt="dandanmian">
+                <img class="aboutImage" src="../Pictures/dandanmian.jpg" alt="dandanmian">
             </div>
 
         </div>
@@ -85,40 +85,40 @@
             <div class="aboutlist-group">
             <div class="aboutlist">
                 
-                <img class="gridimage" src="../Web-Assignment02/Pictures/mochi.jpg" alt="mochi">
+                <img class="gridimage" src="../Pictures/mochi.jpg" alt="mochi">
             </div>
             <div class="aboutlist">
                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/spice.jpg" alt="spice">
+                <img class="gridimage" src="../Pictures/spice.jpg" alt="spice">
             </div>
             <div class="aboutlist">
                 
-                <img class="gridimage" src="../Web-Assignment02/Pictures/zongzi.jpg" alt="zongzi">
+                <img class="gridimage" src="../Pictures/zongzi.jpg" alt="zongzi">
             </div>
             <div class="aboutlist">
                
-            <img class="gridimage" src="../Web-Assignment02/Pictures/cutmeat.jpg"
+            <img class="gridimage" src="../Pictures/cutmeat.jpg"
                     alt="cutmeat">
                 
             </div>
             <div class="aboutlist">
         
-                <img class="gridimage" src="../Web-Assignment02/Pictures/friedrice.jpg"
+                <img class="gridimage" src="../Pictures/friedrice.jpg"
                     alt="friedrice">
             </div>
             <div class="aboutlist">
                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/porkbelly.jpg" alt="porkbelly">
+                <img class="gridimage" src="../Pictures/porkbelly.jpg" alt="porkbelly">
             </div>
             <div class="aboutlist">
                
-                <img class="gridimage" src="../Web-Assignment02/Pictures/dumplings.jpg"
+                <img class="gridimage" src="../Pictures/dumplings.jpg"
                     alt="dumplings">
             </div>
 
             <div class="aboutlist">
                
-            <img class="gridimage" src="../Web-Assignment02/Pictures/doufubowl.jpg"
+            <img class="gridimage" src="../Pictures/doufubowl.jpg"
                     alt="doufubowl">
             </div>
         </div>
@@ -126,7 +126,7 @@
 </main>
 <footer class="footer">
   <?php 
-      include("footer.php");
+      include("../public/footer.php");
     ?>
 </footer>
 
