@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="/Web-Assignment02/Stylesheets/subscription.css">
     <script src="/Web-Assignment02/private/subscription.js" defer></script>
 </head>
-
+<!--jj-->
 <body>
 <?php 
  include("../public/subpageHeader.php");
