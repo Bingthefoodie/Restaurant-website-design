@@ -8,7 +8,7 @@ define("DB_NAME", "assignment02");
 
 function db_connect()
 {
-  $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+  $connection = mysqli_connect("localhost:3307", "root", "Bw-GxP15e3Zn26tk", "assignment02");
   if (mysqli_connect_errno()) {
     $msg = "Database connection failed: ";
     $msg .= mysqli_connect_error();
