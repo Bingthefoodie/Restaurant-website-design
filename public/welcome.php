@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../Web-Assignment02/Stylesheets/style.css" />
 </head>
 
 <body>
@@ -10,7 +10,7 @@
   <?php
   //conect to the datbase
   
-  require_once('Connect_data.php');
+  require_once('database.php');
   include "subpageHeader.php";
   $db = db_connect();
   //access URL parameter
@@ -25,29 +25,36 @@
   $result = mysqli_fetch_assoc($result_set);
 
   ?>
-  <!-- display the employee data -->
+  <!-- display the user data -->
   <div id="content">
 
-    <a class="back-link" href="index.php"> Back to List</a>
+    <a class="back-link" href="index.php"> Back to the home page</a>
 
     <div class="page show">
 
-      <h1> <?php echo $result['name']; ?></h1>
+      <h1> <?php echo $result['firstName']; ?></h1>
 
       <div class="attributes">
         <dl>
-          <dt>Employee Name</dt>
-          <dd><?php echo $result['name']; ?></dd>
+          <dt>First Name</dt>
+          <dd><?php echo $result['firstName']; ?></dd>
         </dl>
         <dl>
-          <dt>Employee address</dt>
-          <dd><?php echo $result['address']; ?></dd>
+          <dt>Last Name</dt>
+          <dd><?php echo $result['lastName']; ?></dd>
         </dl>
         <dl>
-          <dt>Employee salary</dt>
-          <dd><?php echo $result['salary']; ?></dd>
+          <dt>Email</dt>
+          <dd><?php echo $result['email']; ?></dd>
         </dl>
         <dl>
+          <dt>Phone Number</dt>
+          <dd><?php echo $result['phoneNumber']; ?></dd>
+        </dl>
+        <dl>
+          <dt>User Name</dt>
+          <dd><?php echo $result['login']; ?></dd>
+        </dl>
 
       </div>
 

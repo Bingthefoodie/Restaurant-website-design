@@ -1,7 +1,7 @@
 <!-- single page form so we get the id and if we hit post the we update so we will process the update mysqli_query
 and redirect to show page otherwise just display the record. -->
 <?php
-require_once('database.php');
+require_once('Connect_data.php');
 $db = db_connect();
 
 
@@ -12,18 +12,21 @@ $id = $_GET['id'];
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   
   //access the employee information
-  $name = $_POST['name']; 
-  $address= $_POST['address'] ;
-  $salary= $_POST['salary'] ;
+  $firstName=$_POST['firstName'];
+  $lastName=$_POST['lastName'];
+  $email=$_POST['email'];
+  $phoneNumber=$_POST['phoneNumber'];
+  $pass=$_POST['pass'];
+  $userName=$_POST['login'];
   //update the table with new information
-  $sql="UPDATE employees set name = '$name' , address= '$address' , salary= '$salary' where id = '$id' ";
+  $sql="UPDATE userinfo set userName = '$userName' , email= '$email' , phoneNumber= '$phoneNumber' where id = '$id' ";
   $result = mysqli_query($db, $sql);
   //redirect to show page
-    header("Location: show.php?id=  $id");
+    header("Location: welcome.php?id=  $id");
   }
   // display the employee information
   else {
-$sql = "SELECT * FROM employees WHERE id= '$id' ";
+$sql = "SELECT * FROM userinfo WHERE id= '$id' ";
     
 $result_set = mysqli_query($db, $sql);
     
@@ -32,41 +35,34 @@ $result = mysqli_fetch_assoc($result_set);
 
 ?>
 
-<?php include 'headerEm.php' ?>;
+<?php include 'header.php' ?>;
 
 <div id="content">
 
-  <a class="back-link" href="index.php"> Back to List</a>
+  <a class="back-link" href="index.php"> Back to the home page</a>
 
   <div class="page edit">
-    <h1>Edit Employee</h1>
+    <h1>Edit user data</h1>
 
     <form form action="<?php echo 'edit.php?id=' . $result['id']; ?>"  method="post">
       <dl>
-        <dt> ID</dt>
-        <dd><input type="text" name="id" value="<?php echo $result['id']; ?>" /></dd>
+        <dt> user name </dt>
+        <dd><input type="text" name="userName" value="<?php echo $result['userName']; ?>" /></dd>
         </dd>
       </dl>
       <dl>
-        <dt>Name</dt>
-        <dd><input type="text" name="name" value="<?php echo $result['name']; ?>" /></dd>
+        <dt>email</dt>
+        <dd><input type="text" name="email" value="<?php echo $result['email']; ?>" /></dd>
       </dl>
       <dl>
-        <dt>Address</dt>
-        <dd><input type="text" name="address" value="<?php echo $result['address']; ?>" /></dd>
-
-        </dd>
-      </dl>
-      <dl>
-        <dt>Salary</dt>
-        
-        <dd><input type="text" name="salary" value="<?php echo $result['salary']; ?>" /></dd>
+        <dt>phone number</dt>
+        <dd><input type="text" name="phoneNumber" value="<?php echo $result['phoneNumber']; ?>" /></dd>
 
         </dd>
       </dl>
       
       <div id="operations">
-        <input type="submit" value="Edit Employee" />
+        <input type="submit" value="Edit user data" />
       </div>
     </form>
 
@@ -74,4 +70,4 @@ $result = mysqli_fetch_assoc($result_set);
 
 </div>
 
-<?php include 'footerEm.php'; ?>
+<?php include 'footer.php'; ?>
