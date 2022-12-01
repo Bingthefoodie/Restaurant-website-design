@@ -3,6 +3,7 @@
 
 /*reset margin and padding*/
 * {
+  font-size: large;
   margin: 0;
   padding:0;
 }
