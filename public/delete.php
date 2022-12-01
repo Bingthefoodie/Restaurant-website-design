@@ -8,7 +8,7 @@
 <?php
 
 require_once('database.php');
-include "headerEm.php" ;
+include "header.php" ;
 $db = db_connect();
 
 if(!isset($_GET['id'])) {
@@ -19,14 +19,14 @@ $id = $_GET['id'];
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-  $sql = "DELETE FROM employees WHERE id ='$id'";
+  $sql = "DELETE FROM userinfo WHERE id ='$id'";
   $result = mysqli_query($db, $sql);
 //redirect to the main page
   header("Location: index.php");
 } 
 else  // to access the employee data
 {
-  $sql = "SELECT * FROM employees WHERE id= '$id' ";
+  $sql = "SELECT * FROM userinfo WHERE id= '$id' ";
     
 $result_set = mysqli_query($db, $sql);
     
@@ -41,18 +41,18 @@ $result = mysqli_fetch_assoc($result_set);
 
 <div id="content">
 
-  <a class="back-link" href="index.php">&laquo; Back to List</a>
+  <a class="back-link" href="index.php">&laquo; Back to the home page</a>
 
   <div class="page delete">
-    <h1>Delete Page</h1>
-    <p>Are you sure you want to delete this Employee?</p>
-    <p class="item"><?php echo $result['name']; ?></p>
+    <h1>Database delete page</h1>
+    <p>Are you sure you want to delete this user?</p>
+    <p class="item"><?php echo $result['userName']; ?></p>
 
     <form form action="<?php echo 'delete.php?id=' . $result['id']; ?>"  method="post">
       <div id="operations">
-        <input type="submit" name="commit" value="Delete Employee" />
+        <input type="submit" name="commit" value="Delete User" />
       </div>
     </form>
   </div>
-  <?php include 'footerEm.php'; ?>
+  <?php include 'footer.php'; ?>
 </div>
