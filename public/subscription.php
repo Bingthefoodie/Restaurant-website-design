@@ -3,22 +3,12 @@
     <link rel="stylesheet" href="/Web-Assignment02/Stylesheets/subscription.css">
     <script src="/Web-Assignment02/private/subscription.js" defer></script>
 </head>
-<?php 
-$servername = "localhost";
-$username = "username";
-$password = "password";
-//create connection
-$conn = new mysqli($servername, $username, $password);
-//check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-  echo "Connected successfully";
-  ?>
+
 <body>
 <?php 
  include("../public/subpageHeader.php");
-?>
+
+  ?>
     <div class="formcontainer">
         <h1>Sign up</h1>
         <hr>
