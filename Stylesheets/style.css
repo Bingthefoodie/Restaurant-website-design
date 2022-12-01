@@ -3,6 +3,7 @@
 
 /*reset margin and padding*/
 * {
+  font-size: large;
   margin: 0;
   padding:0;
 }
@@ -136,7 +137,10 @@
     gap: 1em;
     padding: 1em 0;
   }
-
+  /*css for the dropdown menu in menu page*/
+  .dishes-css {
+    float: right;
+  }
   /*style all the food tags*/
   .foodTag{
     color: greenyellow;
