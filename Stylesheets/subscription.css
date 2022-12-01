@@ -1,16 +1,13 @@
-/*css file for subscription.php*/
-
-
-/*set the text color for body*/
+@import url(https://fonts.googleapis.com/css?family=Cormorant);
 body{
     color: azure;
+    font-family: "Cormorant";
 }
-
-/**/
 .formcontainer{
     padding: 30pt;
     width: 70%;
     margin: 100px auto;
+    font-family: "Cormorant";
 }
 
 /*change the style for all the input with text type*/
@@ -36,33 +33,25 @@ input[type=password], select{
 }
 
 /*change the style for all the button with submit type*/
- button[type=submit]{
-    font-size:medium;
-    background-color: rgb(40, 119, 215);
+button[type=submit]{
+    background-color: #e1a87a;
     color: white;
-    padding: 10px 50px; 
-    margin: 10px 0;
+    padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-    text-align:left;
-    line-height: 80px;
-    box-sizing: border-box; 
-}
-
+    cursor: pointer; }
 /*change the style for all the button with reset type*/
-  button[type=reset]{
-    font-size:medium;
-    background-color: red;
+
+  button[type=reset] {
+    background-color: rgb(203, 199, 199);
     color: white;
-    padding: 14px 50px;
-    margin: 10px 0;
+    padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-} 
+  }
 
 .centerButton{
     padding-left: 500px;
     
-} 
+}

@@ -1,7 +1,7 @@
 <!-- single page form so we get the id and if we hit post the we update so we will process the update mysqli_query
 and redirect to show page otherwise just display the record. -->
 <?php
-require_once('Connect_data.php');
+require_once('database.php');
 $db = db_connect();
 
 
@@ -11,7 +11,7 @@ if(!isset($_GET['id'])) { //check if we get the id
 $id = $_GET['id'];
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   
-  //access the employee information
+  //access the Customer information
   $firstName=$_POST['firstName'];
   $lastName=$_POST['lastName'];
   $email=$_POST['email'];
@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   //redirect to show page
     header("Location: welcome.php?id=  $id");
   }
-  // display the employee information
+  // display the Customer information
   else {
 $sql = "SELECT * FROM userinfo WHERE id= '$id' ";
     
@@ -35,7 +35,7 @@ $result = mysqli_fetch_assoc($result_set);
 
 ?>
 
-<?php include 'header.php' ?>;
+<?php include 'headerEm.php' ?>;
 
 <div id="content">
 
@@ -45,18 +45,33 @@ $result = mysqli_fetch_assoc($result_set);
     <h1>Edit user data</h1>
 
     <form form action="<?php echo 'edit.php?id=' . $result['id']; ?>"  method="post">
-      <dl>
-        <dt> user name </dt>
-        <dd><input type="text" name="userName" value="<?php echo $result['userName']; ?>" /></dd>
+    <dl>
+        <dt> First Name </dt>
+        <dd><input type="text" name="userName" value="<?php echo $result['firstname']; ?>" /></dd>
         </dd>
       </dl>
       <dl>
-        <dt>email</dt>
+        <dt> Last Name </dt>
+        <dd><input type="text" name="userName" value="<?php echo $result['lastname']; ?>" /></dd>
+        </dd>
+      </dl>  
+    <dl>
+        <dt> User Name </dt>
+        <dd><input type="text" name="userName" value="<?php echo $result['username']; ?>" /></dd>
+        </dd>
+      </dl>
+      <dl>
+        <dt>Email</dt>
         <dd><input type="text" name="email" value="<?php echo $result['email']; ?>" /></dd>
       </dl>
       <dl>
-        <dt>phone number</dt>
-        <dd><input type="text" name="phoneNumber" value="<?php echo $result['phoneNumber']; ?>" /></dd>
+        <dt> Password </dt>
+        <dd><input type="text" name="password" value="<?php echo $result['password']; ?>" /></dd>
+        </dd>
+      </dl>
+      <dl>
+        <dt>Phone Number</dt>
+        <dd><input type="text" name="phoneNumber" value="<?php echo $result['phonenumber']; ?>" /></dd>
 
         </dd>
       </dl>
@@ -70,4 +85,4 @@ $result = mysqli_fetch_assoc($result_set);
 
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include 'footerEm.php'; ?>

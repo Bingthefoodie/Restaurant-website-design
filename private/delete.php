@@ -8,7 +8,7 @@
 <?php
 
 require_once('database.php');
-include "header.php" ;
+include "headerEm.php" ;
 $db = db_connect();
 
 if(!isset($_GET['id'])) {
@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 //redirect to the main page
   header("Location: index.php");
 } 
-else  // to access the employee data
+else  // to access the Customer data
 {
   $sql = "SELECT * FROM userinfo WHERE id= '$id' ";
     
@@ -46,7 +46,7 @@ $result = mysqli_fetch_assoc($result_set);
   <div class="page delete">
     <h1>Database delete page</h1>
     <p>Are you sure you want to delete this user?</p>
-    <p class="item"><?php echo $result['userName']; ?></p>
+    <p class="item"><?php echo $result['username']; ?></p>
 
     <form form action="<?php echo 'delete.php?id=' . $result['id']; ?>"  method="post">
       <div id="operations">
@@ -54,5 +54,5 @@ $result = mysqli_fetch_assoc($result_set);
       </div>
     </form>
   </div>
-  <?php include 'footer.php'; ?>
+  <?php include 'footerEm.php'; ?>
 </div>
