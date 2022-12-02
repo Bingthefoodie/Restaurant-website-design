@@ -21,16 +21,16 @@
       <div class="filterContainer">
         <p>Fliter:</p>
           <div class="filterchoices">
-              <button type="button" class="btn-info btn-lg filter-btn" id="VG">Vegetarian</button>
-              <button type="button" class="btn-info btn-lg filter-btn" id="GF">Gluten-free</button>
-              <button type="button" class="btn-success btn-lg filter-btn" id="a">All</button>
+              <button type="button" class="btn-info btn filter-btn" id="VG">Vegetarian</button>
+              <button type="button" class="btn-info btn filter-btn" id="GF">Gluten-free</button>
+              <button type="button" class="btn-success btn filter-btn" id="a">All</button>
           </div>
       </div>
-      <div style="padding: 30px 20px 10px;">
+      <div style="padding: 30px 0px 10px;">
         <div class="row">
           <div class="col-lg-6">
               <div class="input-group">
-                <input placeholder="Please Input the Keywords." type="text" class="form-control">
+                Search<input placeholder="Please Input the Keywords." type="text" class="form-control">
               </div><!-- /input-group -->
           </div><!-- /.col-lg-6 -->
          </div><!-- /.row -->
