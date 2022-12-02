@@ -17,12 +17,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   $email=$_POST['email'];
   $phoneNumber=$_POST['phoneNumber'];
   $pass=$_POST['pass'];
-  $userName=$_POST['login'];
+  $userName=$_POST['username'];
   //update the table with new information
   $sql="UPDATE userinfo set userName = '$userName' , email= '$email' , phoneNumber= '$phoneNumber' where id = '$id' ";
   $result = mysqli_query($db, $sql);
   //redirect to show page
-    header("Location: welcome.php?id=  $id");
+    header("Location: show.php?id=  $id");
   }
   // display the Customer information
   else {

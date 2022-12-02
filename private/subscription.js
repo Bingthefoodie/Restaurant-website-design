@@ -373,4 +373,3 @@ termsInput.addEventListener("change", function(){
 
 
 
-

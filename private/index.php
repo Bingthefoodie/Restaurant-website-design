@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/Web-Assignment02/Stylesheets/private-style.css" />
   <title>PHP_DB</title>
 </head>
 
@@ -37,6 +37,9 @@
           <th>Phone Number</th>
           <th>User Name</th>
           <th>Password</th>
+          <th></th>
+          <th></th>
+          <th></th>
         </tr>
         <!-- Process the results -->
         <?php while ($results = mysqli_fetch_assoc($result_set)) { ?>
@@ -51,7 +54,7 @@
             <!-- send the id as parameter -->
             <td><a class="action" href="<?php echo "show.php?id=" . $results['id']; ?>">View</a></td>
             <td><a class="action" href="<?php echo "edit.php?id=" . $results['id']; ?>">Edit</a></td>
-            <td><a class="action" href=<?php echo "delete.php?id=" . $results['id']; ?>">delete</a></td>
+            <td><a class="action" href="<?php echo "delete.php?id=" . $results['id']; ?>">delete</a></td>
 
           </tr>
         <?php } ?>

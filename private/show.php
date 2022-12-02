@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="style-show.css" />
+  <link rel="stylesheet" href="/Web-Assignment02/Stylesheets/style-show.css" />
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>

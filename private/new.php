@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet"  href="/Web-Assignment02/public/style.css" />
+<link rel="stylesheet"  href="/Web-Assignment02/Stylesheets/subscription.css" />
 </head>
 <body>
   
-<?php include '/Web-Assignment02/public/header.php'; ?>
+<?php include '../public/header.php'; ?>
 
 <div id="content">
   <div>
@@ -51,4 +51,4 @@
 
 </div>
 
-<?php include '/Web-Assignment02/public/footer.php'; ?>
+<?php include '../public/footer.php'; ?>

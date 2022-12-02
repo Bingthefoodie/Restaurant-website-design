@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //make sure we submit the data
   //redirect to show page with generated id as a parameter
   header("Location: show.php?id=  $id");
 } else {
-  header("Location:  new.php");
+  header("Location:  ../public/subscription.php");
 }
 
 ?>
