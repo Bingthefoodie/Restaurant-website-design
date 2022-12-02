@@ -1,4 +1,4 @@
-
+<!-- This page is the header for backend pages -->
 <!doctype html>
 
 <html lang="en">

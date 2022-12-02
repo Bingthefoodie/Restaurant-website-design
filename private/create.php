@@ -1,5 +1,5 @@
+<!-- This page allows the data insert into database -->
 <?php
-
 require_once('database.php');
 include "headerEm.php";
 $db = db_connect();

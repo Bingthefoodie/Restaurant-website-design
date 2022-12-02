@@ -1,3 +1,5 @@
+<!-- single page form so we get the id and if we hit post the we update so we will process the update mysqli_query
+and redirect to show page otherwise just display the record. -->
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,3 +1,4 @@
+<!-- This page is the footer for front-end pages -->
 <footer class="footer">
           <section class="footer-main">
           <div class="footer-main-iterm">

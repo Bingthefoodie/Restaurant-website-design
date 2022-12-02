@@ -1,3 +1,4 @@
+<!-- This page defines database -->
 <?php
 
 define("DB_SERVER", "localhost");

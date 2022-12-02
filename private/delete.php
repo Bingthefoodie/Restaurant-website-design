@@ -1,4 +1,4 @@
-<!-- example of single page processing form  -->
+<!-- single page processing form  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

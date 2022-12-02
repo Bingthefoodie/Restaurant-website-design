@@ -1,3 +1,4 @@
+<!--Subpage: Menu -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,9 +32,9 @@
           <div class="col-lg-6">
               <div class="input-group">
                 Search<input placeholder="Please Input the Keywords." type="text" class="form-control">
-              </div><!-- /input-group -->
-          </div><!-- /.col-lg-6 -->
-         </div><!-- /.row -->
+              </div>
+          </div>
+         </div>
       </div>
       <div class="dropdown dishes-css">
         <button type="button" class="btn-success btn-lg dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Dishes Type

@@ -1,4 +1,4 @@
--- Database: `demo` and php web application user
+-- Database: `Assignment02` and php web application user
 CREATE DATABASE assignment02;
 GRANT USAGE ON *.* TO 'root';
 GRANT ALL PRIVILEGES ON assignment02.* TO 'root' ;

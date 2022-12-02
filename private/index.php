@@ -24,10 +24,6 @@
     <div class="subjects listing">
       <h1>CUSTOMERS</h1>
 
-      <!-- <div class="actions">
-        <a class="action" href="new.php">Create New Customer</a>
-      </div> -->
-
       <table class="list">
         <tr>
           <th>ID</th>

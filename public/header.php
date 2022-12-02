@@ -1,3 +1,4 @@
+<!-- This page is the header for front-end pages -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,6 @@
 <body>
   <div class="homebg">
     <header class="header">
-     <!-- <h1 class="header-logo"><a href="../public/index.php">Taste of home</a></h1> -->
         <div class="container">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         	<div class="container-fluid"> 
