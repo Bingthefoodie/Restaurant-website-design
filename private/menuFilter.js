@@ -1,9 +1,11 @@
 var allbtn = document.getElementsByClassName("filter-btn");
 var allmenugroups = document.getElementsByClassName("menu-iterm-group");
 var allmenuiterms = document.getElementsByClassName("menu-iterm");
+var allmenuinfos = document.getElementsByTagName("h3");
 var state = "(a)";
-
+var stateText= "";
 var lastSelect = allbtn[2];
+var inp=document.getElementsByTagName("input")[0];
 
 //Bind function to the three buttons.
 for(let i = 0; i< allbtn.length; i++)
@@ -12,7 +14,7 @@ for(let i = 0; i< allbtn.length; i++)
         allbtn[j].onclick = function() {
             if(allbtn[j]==lastSelect) return;
             allbtn[j].className="btn-success btn-lg filter-btn";
-            lastSelect.className="btn-danger btn-lg filter-btn";
+            lastSelect.className="btn-info btn-lg filter-btn";
             lastSelect=allbtn[j];
             state="("+allbtn[j].id+")";
             FilterWork(state);
@@ -128,5 +130,52 @@ function allFilter() {
     {
         H2[i].style.display="";
         allmenugroups[i].style.display="";
+    }
+}
+inp.oninput = function(){
+    stateText = this.value.toLowerCase();
+    searchBar(stateText); 
+}
+//search bar function.
+function searchBar(value) {
+    var H2 = document.getElementsByClassName("menu-header");
+    if(!value||value=="Please Input the Keywords.")
+    {
+        for(let i=0;i<allmenuiterms.length;i++)
+        {
+            allmenuiterms[i].style.display="";
+        }
+        for(let i=0;i<allmenugroups.length;i++)
+        {
+            H2[i].style.display="";
+            allmenugroups[i].style.display="";
+        }
+        if(state!="(a)")
+        {
+            FilterWork(state);
+        }
+        return ;
+    }
+    for(let i=0;i<allmenugroups.length;i++)
+    {
+        H2[i].style.display="";
+    }
+    for(let i=0;i<allmenuinfos.length;i++)
+    {
+        var OK=false;
+        for(let j=0;j<allmenuinfos[i].childNodes.length;j++)
+        {
+            var now=allmenuinfos[i].childNodes[j];
+            if(now.className!="dish-name") continue;
+            if(now.innerHTML.toLowerCase().indexOf(value)>-1)
+            {
+                OK=true;
+                break;
+            }
+         }
+        if(!OK)
+        {
+            allmenuinfos[i].parentElement.style.display="none";
+        }
     }
 }
