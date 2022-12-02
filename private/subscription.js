@@ -302,13 +302,13 @@ document.form.addEventListener("reset",resetFormError);
 
 firstNameInput.addEventListener("blur",()=>{
     let firstName=validateFirstName();
-    if(firstName=defaultMSg){
+    if(firstName == defaultMSg){
         firstNameError.textContent=defaultMSg;
     }
 });
 lastNameInput.addEventListener("blur",()=>{
     let lastName=validateLastName();
-    if(lastName=defaultMSg){
+    if(lastName == defaultMSg){
         lastNameError.textContent=defaultMSg;
     }
 });
@@ -324,7 +324,7 @@ emailInput.addEventListener("blur",()=>{
 
 phoneNumberInput.addEventListener("blur",()=>{
     let phoneNumber=validatePhoneNumber();
-    if(phoneNumber=defaultMSg){
+    if(phoneNumber == defaultMSg){
         phoneNumberError.textContent=defaultMSg;
     }
 });
