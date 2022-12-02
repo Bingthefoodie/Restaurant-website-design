@@ -1,3 +1,4 @@
+<!-- This page is the header for front-end subpages -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
