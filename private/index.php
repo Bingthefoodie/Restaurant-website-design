@@ -51,7 +51,7 @@
             <!-- send the id as parameter -->
             <td><a class="action" href="<?php echo "show.php?id=" . $results['id']; ?>">View</a></td>
             <td><a class="action" href="<?php echo "edit.php?id=" . $results['id']; ?>">Edit</a></td>
-            <td><a class="action" href=<?php echo "delete.php?id=" . $results['id']; ?>">delete</a></td>
+            <td><a class="action" href="<?php echo "delete.php?id=" . $results['id']; ?>">delete</a></td>
 
           </tr>
         <?php } ?>

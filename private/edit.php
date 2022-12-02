@@ -16,13 +16,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   $lastName=$_POST['lastName'];
   $email=$_POST['email'];
   $phoneNumber=$_POST['phoneNumber'];
-  $pass=$_POST['pass'];
-  $userName=$_POST['login'];
+  $pass=$_POST['password'];
+  $userName=$_POST['username'];
   //update the table with new information
-  $sql="UPDATE userinfo set userName = '$userName' , email= '$email' , phoneNumber= '$phoneNumber' where id = '$id' ";
+  $sql="UPDATE userinfo set username = '$userName' , email= '$email' , phoneNumber= '$phoneNumber' where id = '$id' ";
   $result = mysqli_query($db, $sql);
   //redirect to show page
-    header("Location: welcome.php?id=  $id");
+    header("Location: show.php?id=  $id");
   }
   // display the Customer information
   else {
@@ -57,7 +57,7 @@ $result = mysqli_fetch_assoc($result_set);
       </dl>  
     <dl>
         <dt> User Name </dt>
-        <dd><input type="text" name="userName" value="<?php echo $result['username']; ?>" /></dd>
+        <dd><input type="text" name="username" value="<?php echo $result['username']; ?>" /></dd>
         </dd>
       </dl>
       <dl>
