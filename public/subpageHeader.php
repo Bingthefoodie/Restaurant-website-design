@@ -12,7 +12,6 @@
 </head>
 <body>
     <header class="header">
-      <h1 class="header-logo"><a href="../public/index.php">Taste of home</a></h1>
         <div class="container">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         	<div class="container-fluid"> 
@@ -23,13 +22,13 @@
 		          	<span class="icon-bar"></span>
 		           	<span class="icon-bar"></span>
 	          	</button>
-	        	<a class="navbar-brand" href="index.php">Home</a>
+	        	<a id="navbar-brand" href="../public/index.php">Taste of Home</a>
 	          </div>
 	          <div class="collapse navbar-collapse" id="navbar-collapse">
 	          	<ul class="nav navbar-nav navbar-right">
-		        	<li><a href="menu.php">Menu</a></li>
-		        	<li><a href="subscription.php">Subscription</a></li>
-		        	<li><a href="about.php">About us</a></li>
+		        	<li><a href="../public/menu.php">Menu</a></li>
+		        	<li><a href="../public/subscription.php">Subscription</a></li>
+		        	<li><a href="../public/about.php">About us</a></li>
 	          	</ul>
            </div>
           </div>

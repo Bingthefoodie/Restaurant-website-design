@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="../Web-Assignment02/private/menuFilter.js" defer></script>
+  <script src="/Web-Assignment02/private/menuFilter.js" defer></script>
   <title>Menu</title>
   <?php 
     include("subpageHeader.php");
@@ -21,8 +21,8 @@
       <div class="filterContainer">
         <p>Fliter:</p>
           <div class="filterchoices">
-              <button type="button" class="btn-danger btn-lg filter-btn" id="VG">Vegetarian</button>
-              <button type="button" class="btn-danger btn-lg filter-btn" id="GF">Gluten-free</button>
+              <button type="button" class="btn-info btn-lg filter-btn" id="VG">Vegetarian</button>
+              <button type="button" class="btn-info btn-lg filter-btn" id="GF">Gluten-free</button>
               <button type="button" class="btn-success btn-lg filter-btn" id="a">All</button>
           </div>
       </div>

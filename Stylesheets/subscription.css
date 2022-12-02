@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cormorant);
 body{
-    color: azure;
+    color: black;
     font-family: "Cormorant";
 }
 .formcontainer{
@@ -53,5 +53,18 @@ button[type=submit]{
 
 .centerButton{
     padding-left: 500px;
-    
-}
+  }
+  .checkboxNews,.checkboxTerm{
+    color: #e1a87a;
+  }
+  h1{
+    color: #e1a87a;
+    font-weight: bolder;
+  }
+  .attributes{
+    font-weight: bold;
+    font-size: 110%;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px #616161 solid;
+  }

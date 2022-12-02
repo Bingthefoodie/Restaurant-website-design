@@ -13,9 +13,9 @@
 
   ?>
     <div class="formcontainer">
-        <h1>Sign up</h1>
+        <h1>< Subscription ></h1>
         <hr>
-        <form name="form" id="myForm" action="welcome.php" method="post" onsubmit="return validate();">
+        <form name="form" id="myForm" action="/Web-Assignment02/private/create.php" method="post" onsubmit="return validate();">
             
             <div class="userFirstName">
                 <label for="firstName">First Name</label>
@@ -39,12 +39,12 @@
 
             <div class="textUserName">
                 <label for="login">User Name</label>
-                <input type="text" name="login" id="login" placeholder="User name">
+                <input type="text" name="Username" id="login" placeholder="User name">
             </div>
 
             <div class="textPassword">
                 <label for="pass">Password</label>
-                <input type="password" name="pass" id="pass" placeholder="Password">
+                <input type="password" name="password" id="pass" placeholder="Password">
             </div>
         
             <div class="textRetypePassword">

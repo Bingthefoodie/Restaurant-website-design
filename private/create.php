@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //make sure we submit the data
     $lastName=$_POST['lastName'];
     $email=$_POST['email'];
     $phoneNumber=$_POST['phoneNumber'];
-    $pass=$_POST['Password'];
+    $pass=$_POST['password'];
     $userName=$_POST['Username'];
   //prepare your query string
   $sql = "INSERT INTO userinfo (firstname, lastname, email, phonenumber, username,password) 

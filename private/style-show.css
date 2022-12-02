@@ -6,8 +6,16 @@
   font-size: large;
   margin: 0;
   padding:0;
+  
 }
-
+.pageshow{
+    background-image: url("/Web-Assignment02/Pictures/firstImage.jpg");
+    height: 1000px;
+max-width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;}
 /*set the font style and background color for the page*/
   body, html{
     font-family: 'Cardo', serif;
@@ -81,7 +89,7 @@
   }
 
   /*set style for contact and hours content under footer-main-iterm*/
-  .footer-main-iterm{
+  .footer-main-iterm,.attributes{
     padding: 1rem;
     min-width: 12rem;
     text-align: center;
@@ -179,8 +187,24 @@
   margin:10px 0 10px 180px;
   font-style: italic;
 }
-
-
+.NewCustomer{
+    font-family: "Cormorant";
+    color: #FCF9BE;
+    font-size: 40px;
+    font-weight: bolder;
+    margin:100px 0 10px 70px;
+    text-align: center;
+}
+dt{
+    font-size: large;
+}
+.info{
+    font-family: "Cormorant";
+    color: #FCF9BE;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center; 
+}
 
 
 

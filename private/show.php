@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-show.css" />
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -11,7 +14,7 @@
   //conect to the datbase
   
   require_once('database.php');
-  include "headerEm.php";
+ 
   $db = db_connect();
   //access URL parameter
 
@@ -27,13 +30,15 @@
   ?>
   <!-- display the Customer data -->
   <div id="content">
-
-    <a class="back-link" href="index.php"> Back to List</a>
-
-    <div class="page show">
-
-      <h1> ID: <?php echo $result['id']; ?></h1>
-
+  <?php 
+    include("../public/subpageHeader.php");
+  ?>
+    <div class="pageshow">
+<h1 class="NewCustomer">Thank You For Subscription</h1>
+<div class="info">
+<h3>Your information is as below:</h3>
+      <h3> Customer ID: <?php echo $result['id']; ?></h3>
+</div>
       <div class="attributes">
         <dl>
           <dt>First Name</dt>
@@ -67,8 +72,10 @@
     </div>
 
   </div>
+  <?php 
+    include("../public/footer.php");
+  ?>
 
-  <?php include 'footerEm.php'; ?>
 </body>
 
 </html>

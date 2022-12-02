@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet"  href="style.css" />
+<link rel="stylesheet"  href="/Web-Assignment02/public/style.css" />
 </head>
 <body>
   
-<?php include 'headerEm.php'; ?>
+<?php include '/Web-Assignment02/public/header.php'; ?>
 
 <div id="content">
-
-  <a class="back-link" href="<?php echo 'index.php'; ?>"> Back to List</a>
-
-  <div class="New Customer">
-    <h1>Create New Customer</h1>
+  <div>
+    <h1 class="NewCustomer">Thank You For Subscription</h1>
 
     <form action='create.php' method="POST">
     
@@ -41,7 +38,7 @@
       </dl>
       <dl>
         <dt>Password</dt>
-        <dd><input type="text" name="Password"  /></dd>
+        <dd><input type="text" name="password"  /></dd>
           
       </dl>
       <div id="operations">
@@ -54,4 +51,4 @@
 
 </div>
 
-<?php include 'footerEm.php'; ?>
+<?php include '/Web-Assignment02/public/footer.php'; ?>
