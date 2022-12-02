@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   $pass=$_POST['pass'];
   $userName=$_POST['username'];
   //update the table with new information
-  $sql="UPDATE userinfo set userName = '$userName' , email= '$email' , phoneNumber= '$phoneNumber' where id = '$id' ";
+  $sql="UPDATE userinfo set username = '$userName' , email= '$email' , phoneNumber= '$phoneNumber' where id = '$id' ";
   $result = mysqli_query($db, $sql);
   //redirect to show page
     header("Location: show.php?id=  $id");
@@ -57,7 +57,7 @@ $result = mysqli_fetch_assoc($result_set);
       </dl>  
     <dl>
         <dt> User Name </dt>
-        <dd><input type="text" name="userName" value="<?php echo $result['username']; ?>" /></dd>
+        <dd><input type="text" name="username" value="<?php echo $result['username']; ?>" /></dd>
         </dd>
       </dl>
       <dl>
